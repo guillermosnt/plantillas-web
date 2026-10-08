@@ -5,7 +5,7 @@ local_backend: true        # Solo funciona en localhost; en la web publicada se 
 
 backend:
   name: github
-  repo: TU-USUARIO/TU-REPOSITORIO   # <- se cambia al publicar
+  repo: guillermosnt/plantillas-web   # <- se cambia al publicar
   branch: main
 
 locale: es

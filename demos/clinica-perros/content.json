@@ -1,0 +1,35 @@
+{
+  "business": {
+    "name": "Clínica Huellas", "tagline": "Cuidamos de quien te cuida a ti.",
+    "description": "Clínica veterinaria para perros en Zaragoza. Medicina preventiva, cirugía, peluquería y urgencias, con un trato cercano para ti y para tu mejor amigo.",
+    "phone": "XXXXXXXX", "email": "hola@ejemplo.com", "whatsapp": "XXXXXXXX",
+    "address": { "street": "Avenida del Parque, 45", "postalCode": "50009", "city": "Zaragoza", "mapEmbedUrl": "" },
+    "heroImage": { "url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1000&q=80", "alt": "Perro feliz mirando a cámara" },
+    "seo": { "title": "Clínica Huellas | Veterinaria para perros en Zaragoza", "description": "Clínica veterinaria para perros en Zaragoza: vacunación, cirugía, peluquería y urgencias. Pide cita." }
+  },
+  "navigation": [
+    { "label": "Servicios", "sectionId": "servicios" }, { "label": "Urgencias", "sectionId": "urgencias" },
+    { "label": "Equipo", "sectionId": "equipo" }, { "label": "Consejos", "sectionId": "consejos" }, { "label": "Cita", "sectionId": "cita" }
+  ],
+  "services": [
+    { "name": "Vacunación y revisiones", "text": "Calendario de vacunas, desparasitación y chequeos anuales.", "color": "#14b8a6" },
+    { "name": "Cirugía", "text": "Esterilizaciones, tejidos blandos y cirugía programada con anestesia segura.", "color": "#ffd23f" },
+    { "name": "Diagnóstico", "text": "Análisis, ecografía y radiología digital en la propia clínica.", "color": "#ff7a59" },
+    { "name": "Dentista", "text": "Limpieza dental, extracciones y consejos de higiene bucal.", "color": "#7cc6fe" },
+    { "name": "Peluquería canina", "text": "Baño, corte y cuidado del manto con productos suaves.", "color": "#b8e986" },
+    { "name": "Nutrición", "text": "Dietas a medida para cachorros, adultos y perros mayores.", "color": "#ffb3c7" }
+  ],
+  "emergency": { "title": "¿Urgencia?", "text": "Si tu perro ha comido algo raro, se ha lesionado o respira mal, llámanos ahora." },
+  "team": [
+    { "name": "Dra. Laura Pérez", "role": "Directora · Medicina interna" },
+    { "name": "Dr. Álvaro Gil", "role": "Cirugía y traumatología" },
+    { "name": "Sofía Ramos", "role": "Auxiliar y peluquería" }
+  ],
+  "tips": [
+    { "title": "Primer año del cachorro", "text": "Las vacunas y la desparasitación del primer año marcan su salud futura." },
+    { "title": "Calor en verano", "text": "Evita paseos en las horas centrales y lleva siempre agua fresca." },
+    { "title": "Dientes sanos", "text": "El cepillado regular previene sarro y problemas en las encías." }
+  ],
+  "openingHours": [ { "days": "Lunes a viernes", "time": "9:00 - 20:00" }, { "days": "Sábado", "time": "10:00 - 14:00" }, { "days": "Domingo", "time": "Solo urgencias" } ],
+  "socialLinks": { "instagram": "https://www.instagram.com/", "facebook": "https://www.facebook.com/" }
+}

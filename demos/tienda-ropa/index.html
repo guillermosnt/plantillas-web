@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NORTE | Tienda de ropa de diseño en Madrid</title>
+  <meta name="description" content="Tienda de ropa en Madrid: colecciones atemporales, series cortas y tejidos de calidad.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a class="nav__brand" href="#inicio" id="brand"></a>
+      <button class="nav__toggle" id="toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">Menú</button>
+      <nav class="nav__menu" id="menu" aria-label="Navegación principal"><ul id="links"></ul></nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__top">
+        <h1 id="hero-title"></h1>
+        <p class="hero__desc" id="hero-desc"></p>
+      </div>
+      <div class="hero__img"><img id="hero-img" alt="" fetchpriority="high"></div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div class="ticker__in" id="ticker"></div></div>
+
+    <section id="colecciones" class="sec wrap" aria-labelledby="c-title">
+      <h2 id="c-title">Colecciones</h2>
+      <ul class="cols" id="collections"></ul>
+    </section>
+
+    <section id="destacados" class="sec wrap" aria-labelledby="d-title">
+      <h2 id="d-title">Destacados</h2>
+      <ul class="prods" id="featured"></ul>
+    </section>
+
+    <section id="tienda" class="shop" aria-labelledby="t-title">
+      <div class="wrap shop__in">
+        <div><h2 id="t-title"></h2><p id="t-text"></p></div>
+        <div class="shop__img"><img id="t-img" alt="" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="sec wrap visit" aria-labelledby="v-title">
+      <div><h2 id="v-title">Visítanos</h2><ul class="info" id="info"></ul><div class="row" id="actions"></div></div>
+      <div><h3>Horario</h3><ul class="hours" id="hours"></ul><div class="map" id="map"></div></div>
+    </section>
+  </main>
+  <footer class="foot"><div class="wrap"><p class="foot__big" id="foot-name"></p><p id="copy"></p></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

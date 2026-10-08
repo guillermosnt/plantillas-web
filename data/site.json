@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "name": "Guillermo Santana García",
+    "tagline": "Webs profesionales con panel de edición. Pago único.",
+    "intro": "Elige un modelo, cuéntame cómo es tu negocio y te entrego tu web personalizada, lista para usar y con un panel para que cambies textos, precios y fotos tú mismo, sin saber programar.",
+    "headline": "Tu negocio, con una web que puedes editar tú.",
+    "highlight": "editar tú"
+  },
+  "contact": {
+    "email": "guille2000sg@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/guillermo-santana-garc%C3%ADa/"
+  },
+  "steps": [
+    {
+      "title": "Eliges un modelo",
+      "text": "Mira las demos, pruébalas en el móvil y quédate con la que más encaje con tu negocio."
+    },
+    {
+      "title": "Me cuentas tu negocio",
+      "text": "Nombre, colores, textos, fotos y servicios. Si no tienes algo, te oriento."
+    },
+    {
+      "title": "La personalizo",
+      "text": "Adapto la plantilla a tu marca y cargo todo tu contenido."
+    },
+    {
+      "title": "La recibes y es tuya",
+      "text": "Te entrego la web publicada y el panel para editarla. Sin cuotas mensuales."
+    }
+  ],
+  "plans": [
+    {
+      "name": "Esencial",
+      "price": "250 €",
+      "featured": false,
+      "features": [
+        "Web con tu marca, colores, logo y secciones",
+        "Panel para editar textos, precios y fotos",
+        "Vídeo-guía del panel",
+        "Publicada en una dirección gratuita",
+        "15 días de ajustes tras la entrega"
+      ]
+    },
+    {
+      "name": "Completo",
+      "price": "350 €",
+      "featured": true,
+      "features": [
+        "Todo lo del plan Esencial",
+        "Dominio propio configurado",
+        "Textos redactados por mí y fotos retocadas",
+        "Preparada para Google (SEO local) y ayuda con tu ficha de Maps",
+        "Páginas legales (aviso legal, privacidad y cookies)",
+        "Formulario de reservas o contacto",
+        "30 días de ajustes tras la entrega"
+      ]
+    }
+  ],
+  "planNotes": [
+    "Pago único. Sin cuotas mensuales.",
+    "El dominio (unos 10 €/año) lo contratas tú directamente.",
+    "Las páginas legales son textos base orientativos; la responsabilidad legal final es del titular del negocio.",
+    "No incluye mantenimiento ni soporte después del periodo de ajustes. Cambios posteriores, desde 40 €.",
+    "Sesión de formación en directo (opcional): 40 € la hora."
+  ],
+  "templates": [
+    {
+      "id": "barberia",
+      "name": "Barbería",
+      "style": "Oscuro y elegante, con acento latón",
+      "description": "Servicios con precios, galería, horarios y contacto por WhatsApp.",
+      "url": "demos/barberia/",
+      "image": "img/barberia.jpg",
+      "color": "#c9a66b",
+      "ink": "#14110c",
+      "available": true
+    },
+    {
+      "id": "libreria",
+      "name": "Librería",
+      "style": "Papel crema y tipografía editorial",
+      "description": "Novedades, categorías, eventos y ubicación.",
+      "url": "demos/libreria/",
+      "image": "img/libreria.jpg",
+      "color": "#2f5d50",
+      "ink": "#ffffff",
+      "available": true
+    },
+    {
+      "id": "peluqueria",
+      "name": "Peluquería",
+      "style": "Claro, rosa empolvado y tipografía fina",
+      "description": "Servicios, equipo, galería de trabajos y reservas.",
+      "url": "demos/peluqueria/",
+      "image": "img/peluqueria.jpg",
+      "color": "#d9a5a0",
+      "ink": "#3a2523",
+      "available": true
+    },
+    {
+      "id": "restaurante",
+      "name": "Restaurante",
+      "style": "Cálido, terracota y fotos grandes",
+      "description": "Carta, ambiente, horarios y reservas.",
+      "url": "demos/restaurante/",
+      "image": "img/restaurante.jpg",
+      "color": "#b5533c",
+      "ink": "#ffffff",
+      "available": true
+    },
+    {
+      "id": "clinica-perros",
+      "name": "Clínica de perros",
+      "style": "Amable y redondeado, turquesa y amarillo",
+      "description": "Servicios veterinarios, equipo, urgencias y citas.",
+      "url": "demos/clinica-perros/",
+      "image": "img/clinica-perros.jpg",
+      "color": "#2bb3a8",
+      "ink": "#06302d",
+      "available": true
+    },
+    {
+      "id": "tienda-ropa",
+      "name": "Tienda de ropa",
+      "style": "Blanco y negro, tipografía grande, tipo lookbook",
+      "description": "Colecciones, destacados, tienda física y contacto.",
+      "url": "demos/tienda-ropa/",
+      "image": "img/tienda-ropa.jpg",
+      "color": "#1a1a1a",
+      "ink": "#ffffff",
+      "available": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Panel para editar",
+      "text": "Cambia textos, precios, fotos y horarios tú mismo, sin saber programar.",
+      "size": "big"
+    },
+    {
+      "title": "Perfecta en el móvil",
+      "text": "Se adapta a móvil, tablet y ordenador."
+    },
+    {
+      "title": "Preparada para Google",
+      "text": "Estructura y textos pensados para que te encuentren."
+    },
+    {
+      "title": "Sin cuotas",
+      "text": "Pagas una vez. La web es tuya y no hay mensualidades.",
+      "size": "wide"
+    }
+  ]
+}

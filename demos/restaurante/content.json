@@ -1,0 +1,70 @@
+{
+  "business": {
+    "name": "Casa Almagre",
+    "tagline": "Cocina de mercado, hecha a fuego lento.",
+    "description": "Cocina andaluza de producto y temporada, con brasa, guisos de cuchara y una bodega pequeña pero bien elegida. Mesa, mantel y tiempo.",
+    "phone": "XXXXXXXX",
+    "email": "hola@ejemplo.com",
+    "whatsapp": "XXXXXXXX",
+    "address": { "street": "Calle Feria, 31", "postalCode": "41003", "city": "Sevilla", "mapEmbedUrl": "" },
+    "heroImage": { "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80", "alt": "Plato elaborado servido en la mesa del restaurante" },
+    "seo": { "title": "Casa Almagre | Restaurante de cocina andaluza en Sevilla", "description": "Restaurante de cocina andaluza de mercado en Sevilla. Carta de temporada, menú del día y reservas online." }
+  },
+  "navigation": [
+    { "label": "Menú del día", "sectionId": "menu-dia" },
+    { "label": "La carta", "sectionId": "carta" },
+    { "label": "El local", "sectionId": "local" },
+    { "label": "Reservas", "sectionId": "reservas" },
+    { "label": "Contacto", "sectionId": "contacto" }
+  ],
+  "dailyMenu": {
+    "title": "Menú del día",
+    "price": 14.5,
+    "note": "De lunes a viernes, de 13:00 a 16:00. Pan, bebida y café incluidos.",
+    "courses": [
+      { "label": "Primero", "options": ["Salmorejo con jamón y huevo", "Espinacas con garbanzos", "Ensalada de tomate y ventresca"] },
+      { "label": "Segundo", "options": ["Carrillada al vino tinto", "Lubina a la plancha", "Pollo de corral al ajillo"] },
+      { "label": "Postre", "options": ["Tarta de queso", "Fruta de temporada", "Flan de huevo casero"] }
+    ]
+  },
+  "menu": [
+    { "name": "Para empezar", "items": [
+      { "name": "Croquetas de puchero", "description": "Cremosas, con el caldo del cocido de la casa.", "price": 9 },
+      { "name": "Tomate raf con ventresca", "description": "Aceite de oliva virgen extra y sal en escamas.", "price": 12 },
+      { "name": "Berenjenas con miel de caña", "description": "Fritas al momento, ligeras y crujientes.", "price": 8.5 },
+      { "name": "Jamón ibérico de bellota", "description": "Cortado a cuchillo, 80 g.", "price": 18 }
+    ] },
+    { "name": "Del fuego", "items": [
+      { "name": "Presa ibérica a la brasa", "description": "Con patatas panaderas y pimientos asados.", "price": 19 },
+      { "name": "Pescado del día a la sal", "description": "Según mercado. Para dos personas.", "price": 34 },
+      { "name": "Carrillada al vino tinto", "description": "Guisada despacio, con puré de patata.", "price": 17 },
+      { "name": "Verduras a la parrilla", "description": "Temporada, con salsa romesco.", "price": 13 }
+    ] },
+    { "name": "Para terminar", "items": [
+      { "name": "Tarta de queso al horno", "description": "Con mermelada de naranja amarga.", "price": 6.5 },
+      { "name": "Torrija caramelizada", "description": "Con helado de vainilla.", "price": 6 },
+      { "name": "Flan de huevo", "description": "Receta de la casa.", "price": 5 }
+    ] },
+    { "name": "Bodega", "items": [
+      { "name": "Vino de la casa", "description": "Tinto o blanco, copa.", "price": 3.5 },
+      { "name": "Fino en rama", "description": "Copa de Jerez.", "price": 4 },
+      { "name": "Cerveza de barril", "description": "Caña o tercio.", "price": 2.8 }
+    ] }
+  ],
+  "ambience": {
+    "title": "Una mesa para quedarse",
+    "text": "Un comedor pequeño, de luz cálida y madera, con la cocina a la vista. Aquí se viene sin prisa: a compartir, a repetir y a alargar la sobremesa.",
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80", "alt": "Comedor del restaurante con mesas de madera y luz cálida" },
+      { "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80", "alt": "Plato de comida recién cocinado" },
+      { "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80", "alt": "Barra y mesas del local" }
+    ]
+  },
+  "openingHours": [
+    { "days": "Martes a jueves", "time": "13:00 - 16:00 y 20:00 - 23:30" },
+    { "days": "Viernes y sábado", "time": "13:00 - 16:30 y 20:00 - 00:00" },
+    { "days": "Domingo", "time": "13:00 - 16:30" },
+    { "days": "Lunes", "time": "Cerrado" }
+  ],
+  "socialLinks": { "instagram": "https://www.instagram.com/", "facebook": "https://www.facebook.com/" }
+}

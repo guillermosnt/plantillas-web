@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>García Barber Studio | Barbería moderna en Madrid</title>
+  <meta name="description" content="Barbería en Madrid especializada en cortes de pelo, arreglo de barba y servicios premium.">
+  <meta name="theme-color" content="#0e0e0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__in">
+      <a class="nav__brand" href="#inicio" id="brand"></a>
+      <button class="nav__toggle" id="toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <nav class="nav__menu" id="menu" aria-label="Navegación principal"><ul id="links"></ul></nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <img class="hero__img" id="hero-img" alt="" fetchpriority="high">
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="container hero__body">
+        <p class="eyebrow" id="hero-city"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero__slogan" id="hero-slogan"></p>
+        <p class="hero__desc" id="hero-desc"></p>
+        <div class="actions">
+          <a class="btn btn--primary" id="book" target="_blank" rel="noopener noreferrer" aria-label="Reservar cita por WhatsApp (se abre en una pestaña nueva)">Reservar cita</a>
+          <a class="btn btn--outline" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section alt" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__media"><img id="about-img" alt="" loading="lazy"></div>
+        <div>
+          <p class="eyebrow" id="about-eyebrow"></p>
+          <h2 id="about-title"></h2>
+          <div id="about-text"></div>
+          <dl class="stats" id="stats"></dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <header class="head"><p class="eyebrow">Servicios</p><h2 id="services-title">Lo que hacemos</h2>
+        <p>Cada servicio incluye asesoramiento personalizado y un acabado cuidado al detalle.</p></header>
+        <ul class="cards" id="services"></ul>
+      </div>
+    </section>
+
+    <section id="galeria" class="section alt" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="head"><p class="eyebrow">Galería</p><h2 id="gallery-title">Nuestro trabajo</h2>
+        <p>Un vistazo a los cortes, las barbas y el ambiente que encontrarás en el estudio.</p></header>
+        <ul class="gallery" id="gallery"></ul>
+      </div>
+    </section>
+
+    <section id="horarios" class="section" aria-labelledby="hours-title">
+      <div class="container">
+        <header class="head head--center"><p class="eyebrow">Horarios</p><h2 id="hours-title">Cuándo encontrarnos</h2>
+        <p>Reserva tu cita con antelación para asegurar tu hueco.</p></header>
+        <ul class="hours" id="hours"></ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="section alt" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="head"><p class="eyebrow">Contacto</p><h2 id="contact-title">Reserva tu cita</h2>
+        <p>Llámanos, escríbenos por WhatsApp o pásate por el estudio. Te atenderemos encantados.</p></header>
+        <div class="contact">
+          <div>
+            <ul class="info" id="info"></ul>
+            <div class="actions" id="contact-actions"></div>
+          </div>
+          <div class="map" id="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><p id="copy"></p></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

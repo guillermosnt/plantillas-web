@@ -1,0 +1,195 @@
+{
+  "business": {
+    "heroImage": {
+      "url": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80",
+      "alt": "Barbero realizando un corte de pelo a un cliente"
+    },
+    "name": "García Barber Studio",
+    "phone": "XXXXXXXX",
+    "currency": "EUR",
+    "whatsapp": "XXXXXXXX",
+    "address": {
+      "street": "Calle Mayor, 24",
+      "postalCode": "28013",
+      "city": "Madrid",
+      "mapEmbedUrl": ""
+    },
+    "email": "hola@ejemplo.com",
+    "description": "Barbería moderna en el centro de Madrid donde el oficio de siempre se une a las últimas tendencias. Cortes precisos, barbas cuidadas y un trato cercano.",
+    "seo": {
+      "title": "García Barber Studio | Barbería moderna en Madrid",
+      "description": "Barbería en Madrid especializada en cortes de pelo, arreglo de barba y servicios premium. Reserva tu cita."
+    },
+    "slogan": "Tu estilo. Nuestra pasión."
+  },
+  "navigation": [
+    {
+      "label": "Inicio",
+      "sectionId": "inicio"
+    },
+    {
+      "label": "Nosotros",
+      "sectionId": "nosotros"
+    },
+    {
+      "label": "Servicios",
+      "sectionId": "servicios"
+    },
+    {
+      "label": "Galería",
+      "sectionId": "galeria"
+    },
+    {
+      "label": "Contacto",
+      "sectionId": "contacto"
+    }
+  ],
+  "about": {
+    "eyebrow": "Sobre nosotros",
+    "title": "Más de 10 años cuidando de tu estilo",
+    "paragraphs": [
+      "En García Barber Studio entendemos la barbería como un oficio artesanal. Cada corte y cada arreglo de barba se hacen con calma, precisión y atención al detalle.",
+      "Nuestro espacio está pensado para que desconectes: buena música, un ambiente cuidado y un equipo que escucha lo que buscas para recomendarte lo que mejor te sienta."
+    ],
+    "image": {
+      "url": "https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=1000&q=80",
+      "alt": "Interior de la barbería con sillones clásicos y espejos"
+    },
+    "stats": [
+      {
+        "value": "+10",
+        "label": "años de experiencia"
+      },
+      {
+        "value": "+5.000",
+        "label": "clientes satisfechos"
+      },
+      {
+        "value": "100%",
+        "label": "dedicación"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Corte clásico",
+      "description": "Corte a tijera o máquina, acabado con navaja y peinado a tu estilo.",
+      "price": 17,
+      "durationMinutes": 30,
+      "image": {
+        "url": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80",
+        "alt": "Corte de pelo clásico con acabado degradado"
+      }
+    },
+    {
+      "name": "Corte + barba",
+      "description": "El servicio completo: corte de pelo, perfilado y arreglo de barba.",
+      "price": 22,
+      "durationMinutes": 45,
+      "image": {
+        "url": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80",
+        "alt": "Barbero perfilando la barba con navaja"
+      }
+    },
+    {
+      "name": "Arreglo de barba",
+      "description": "Perfilado, recorte y cuidado de la barba con toalla caliente.",
+      "price": 10,
+      "durationMinutes": 20,
+      "image": {
+        "url": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80",
+        "alt": "Arreglo de barba con recorte de precisión"
+      }
+    },
+    {
+      "name": "Corte premium",
+      "description": "Lavado, corte personalizado, masaje capilar, toalla caliente y styling.",
+      "price": 25,
+      "durationMinutes": 50,
+      "image": {
+        "url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80",
+        "alt": "Peinado final de un corte premium"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "url": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80",
+      "alt": "Corte de pelo en proceso",
+      "caption": "Corte a tijera"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=900&q=80",
+      "alt": "Interior de la barbería",
+      "caption": "Nuestro espacio"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80",
+      "alt": "Detalle de arreglo de barba",
+      "caption": "Barba"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80",
+      "alt": "Degradado limpio y definido",
+      "caption": "Degradado"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80",
+      "alt": "Ambiente de la barbería",
+      "caption": "El ambiente"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80",
+      "alt": "Acabado con navaja",
+      "caption": "Acabado con navaja"
+    }
+  ],
+  "openingHours": [
+    {
+      "dayOfWeek": 1,
+      "day": "Lunes",
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "dayOfWeek": 2,
+      "day": "Martes",
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "dayOfWeek": 3,
+      "day": "Miércoles",
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "dayOfWeek": 4,
+      "day": "Jueves",
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "dayOfWeek": 5,
+      "day": "Viernes",
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "dayOfWeek": 6,
+      "day": "Sábado",
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "dayOfWeek": 0,
+      "day": "Domingo",
+      "open": "09:00",
+      "close": "20:00"
+    }
+  ],
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/",
+    "facebook": "https://www.facebook.com/"
+  }
+}

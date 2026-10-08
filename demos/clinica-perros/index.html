@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clínica Huellas | Veterinaria para perros en Zaragoza</title>
+  <meta name="description" content="Clínica veterinaria para perros en Zaragoza: vacunación, cirugía, peluquería y urgencias.">
+  <meta name="theme-color" content="#14b8a6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="nav wrap" id="nav">
+    <a class="nav__brand" href="#inicio" id="brand"></a>
+    <button class="nav__toggle" id="toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav class="nav__menu" id="menu" aria-label="Navegación principal"><ul id="links"></ul></nav>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero wrap" aria-labelledby="hero-title">
+      <div>
+        <p class="chip" id="hero-city"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero__desc" id="hero-desc"></p>
+        <div class="row"><a class="btn" href="#cita">Pedir cita</a><a class="btn btn--alt" href="#servicios">Ver servicios</a></div>
+      </div>
+      <div class="blob"><img id="hero-img" alt="" fetchpriority="high"><a class="sos" id="sos" href="#urgencias" aria-label="Ir a urgencias">Urgencias</a></div>
+    </section>
+    <section id="servicios" class="sec wrap" aria-labelledby="s-title">
+      <h2 id="s-title">Todo para su salud</h2>
+      <ul class="cards" id="services"></ul>
+    </section>
+    <section id="urgencias" class="sos-band" aria-labelledby="u-title">
+      <div class="wrap sos-band__in"><div><h2 id="u-title"></h2><p id="u-text"></p></div><a class="call" id="call" href="#"></a></div>
+    </section>
+    <section id="equipo" class="sec wrap" aria-labelledby="e-title">
+      <h2 id="e-title">Quién cuida de ellos</h2>
+      <ul class="team" id="team"></ul>
+    </section>
+    <section id="consejos" class="tipsec" aria-labelledby="t-title">
+      <div class="wrap sec"><h2 id="t-title">Consejos para tu perro</h2><ul class="tips" id="tips"></ul></div>
+    </section>
+    <section id="cita" class="sec wrap" aria-labelledby="c-title">
+      <div class="appt">
+        <div><h2 id="c-title">Pide cita</h2><p>Cuéntanos qué le pasa a tu perro y te respondemos por WhatsApp.</p></div>
+        <form class="form" id="form">
+          <label>Tu nombre<input name="name" required autocomplete="name"></label>
+          <label>Nombre del perro<input name="pet" required></label>
+          <label>Motivo<select name="reason" id="reason"></select></label>
+          <button class="btn" type="submit">Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+    <section id="contacto" class="soft" aria-labelledby="v-title">
+      <div class="wrap sec visit">
+        <div><h2 id="v-title">Dónde estamos</h2><ul class="info" id="info"></ul><div class="row" id="actions"></div></div>
+        <div><h3>Horario</h3><ul class="hours" id="hours"></ul><div class="map" id="map"></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="foot wrap"><p id="copy"></p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

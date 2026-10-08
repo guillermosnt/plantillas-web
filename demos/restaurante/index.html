@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Almagre | Restaurante de cocina andaluza en Sevilla</title>
+  <meta name="description" content="Restaurante de cocina andaluza de mercado en Sevilla. Carta de temporada, menú del día y reservas.">
+  <meta name="theme-color" content="#1a1210">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Gloock&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a class="nav__brand" href="#inicio" id="brand"></a>
+      <button class="nav__toggle" id="toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
+      <nav class="nav__menu" id="menu" aria-label="Navegación principal"><ul id="links"></ul></nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <img class="hero__img" id="hero-img" alt="" fetchpriority="high">
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="wrap hero__body">
+        <p class="tag" id="hero-city"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero__desc" id="hero-desc"></p>
+        <div class="row"><a class="btn" href="#reservas">Reservar mesa</a><a class="btn btn--out" href="#carta">Ver la carta</a></div>
+      </div>
+    </section>
+
+    <section id="menu-dia" class="daily" aria-labelledby="d-title">
+      <div class="wrap daily__in">
+        <div><h2 id="d-title"></h2><p class="daily__price" id="d-price"></p><p id="d-note"></p></div>
+        <div class="courses" id="courses"></div>
+      </div>
+    </section>
+
+    <section id="carta" class="sec wrap" aria-labelledby="c-title">
+      <h2 id="c-title">La carta</h2>
+      <div class="tabs" id="tabs" role="group" aria-label="Secciones de la carta"></div>
+      <ul class="dishes" id="dishes" aria-live="polite"></ul>
+    </section>
+
+    <section id="local" class="sec wrap" aria-labelledby="l-title">
+      <div class="amb">
+        <div class="amb__text"><h2 id="l-title"></h2><p id="l-text"></p></div>
+        <div class="amb__imgs" id="amb-imgs"></div>
+      </div>
+    </section>
+
+    <section id="reservas" class="book" aria-labelledby="r-title">
+      <div class="wrap book__in">
+        <div><h2 id="r-title">Reserva tu mesa</h2><p>Dinos cuándo vienes y te confirmamos por WhatsApp.</p></div>
+        <form class="form" id="form">
+          <label>Nombre<input name="name" required autocomplete="name"></label>
+          <label>Fecha<input name="date" type="date" required id="date"></label>
+          <label>Hora<select name="time" id="time"></select></label>
+          <label>Personas<select name="people" id="people"></select></label>
+          <button class="btn btn--dark" type="submit">Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contacto" class="sec wrap visit" aria-labelledby="v-title">
+      <div>
+        <h2 id="v-title">Dónde estamos</h2>
+        <ul class="info" id="info"></ul>
+        <div class="row" id="actions"></div>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <ul class="hours" id="hours"></ul>
+        <div class="map" id="map"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="foot wrap"><p id="copy"></p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

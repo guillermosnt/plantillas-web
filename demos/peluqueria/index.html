@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atelier Rosalía | Peluquería de autor en Valencia</title>
+  <meta name="description" content="Peluquería en Valencia: corte, color, tratamientos y peinados.">
+  <meta name="theme-color" content="#fbf3f0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a class="nav__brand" href="#inicio" id="brand"></a>
+      <button class="nav__toggle" id="toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
+      <nav class="nav__menu" id="menu" aria-label="Navegación principal"><ul id="links"></ul></nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <p class="small" id="hero-city"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero__desc" id="hero-desc"></p>
+        <a class="btn" id="book" target="_blank" rel="noopener noreferrer" aria-label="Reservar cita por WhatsApp (se abre en una pestaña nueva)">Reservar cita</a>
+      </div>
+      <div class="arch"><img id="hero-img" alt="" fetchpriority="high"></div>
+    </section>
+    <section id="servicios" class="sec wrap" aria-labelledby="s-title">
+      <h2 id="s-title" class="center">Nuestros servicios</h2>
+      <div class="menu" id="services"></div>
+    </section>
+    <section id="equipo" class="soft" aria-labelledby="e-title">
+      <div class="wrap sec">
+        <h2 id="e-title" class="center">El equipo</h2>
+        <ul class="team" id="team"></ul>
+      </div>
+    </section>
+    <section id="trabajos" class="sec wrap" aria-labelledby="t-title">
+      <h2 id="t-title" class="center">Nuestros trabajos</h2>
+      <ul class="arches" id="gallery"></ul>
+    </section>
+    <section id="contacto" class="soft" aria-labelledby="c-title">
+      <div class="wrap sec visit">
+        <div>
+          <h2 id="c-title">Te esperamos</h2>
+          <ul class="info" id="info"></ul>
+          <div class="row" id="actions"></div>
+        </div>
+        <div><h3>Horario</h3><ul class="hours" id="hours"></ul><div class="map" id="map"></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="foot wrap"><p id="copy"></p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+# Panel de edición (Decap CMS) de la plantilla Barbería.
+# Rutas relativas a la RAÍZ del repositorio (la carpeta donde se ejecuta "npx decap-server").
+
+local_backend: true        # Solo funciona en localhost; en la web publicada se usa "backend"
+
+backend:
+  name: github
+  repo: TU-USUARIO/TU-REPOSITORIO   # <- se cambia al publicar
+  branch: main
+
+locale: es
+media_folder: "demos/barberia/img"
+public_folder: "img"
+
+collections:
+  - name: web
+    label: "Mi web"
+    files:
+      - name: contenido
+        label: "Contenido de la web"
+        file: "demos/barberia/content.json"
+        fields:
+          - label: "Negocio"
+            name: business
+            widget: object
+            fields:
+              - { label: "Nombre del negocio", name: name, widget: string }
+              - { label: "Eslogan", name: slogan, widget: string }
+              - { label: "Descripción", name: description, widget: text }
+              - { label: "Teléfono", name: phone, widget: string }
+              - { label: "Email", name: email, widget: string }
+              - { label: "WhatsApp", name: whatsapp, widget: string, hint: "Solo números con prefijo de país, sin +. Ejemplo: 34600123456" }
+              - { label: "Moneda", name: currency, widget: hidden }
+              - label: "Dirección"
+                name: address
+                widget: object
+                fields:
+                  - { label: "Calle y número", name: street, widget: string }
+                  - { label: "Código postal", name: postalCode, widget: string }
+                  - { label: "Ciudad", name: city, widget: string }
+                  - { label: "Enlace del mapa (opcional)", name: mapEmbedUrl, widget: string, required: false, hint: "En Google Maps: Compartir > Insertar un mapa > copia solo la dirección del atributo src" }
+              - label: "Foto principal"
+                name: heroImage
+                widget: object
+                fields:
+                  - { label: "Imagen", name: url, widget: image }
+                  - { label: "Descripción de la imagen", name: alt, widget: string }
+              - label: "Buscadores (SEO)"
+                name: seo
+                widget: object
+                fields:
+                  - { label: "Título de la página", name: title, widget: string }
+                  - { label: "Descripción para Google", name: description, widget: text }
+          - label: "Sobre nosotros"
+            name: about
+            widget: object
+            fields:
+              - { label: "Etiqueta pequeña", name: eyebrow, widget: string }
+              - { label: "Título", name: title, widget: string }
+              - label: "Párrafos"
+                name: paragraphs
+                widget: list
+                field: { label: "Párrafo", name: paragraph, widget: text }
+              - label: "Imagen"
+                name: image
+                widget: object
+                fields:
+                  - { label: "Imagen", name: url, widget: image }
+                  - { label: "Descripción de la imagen", name: alt, widget: string }
+              - label: "Cifras destacadas"
+                name: stats
+                widget: list
+                summary: "{{fields.value}} {{fields.label}}"
+                fields:
+                  - { label: "Cifra", name: value, widget: string }
+                  - { label: "Texto", name: label, widget: string }
+          - label: "Servicios"
+            name: services
+            widget: list
+            summary: "{{fields.name}} - {{fields.price}} €"
+            fields:
+              - { label: "Nombre", name: name, widget: string }
+              - { label: "Descripción", name: description, widget: text }
+              - { label: "Precio (€)", name: price, widget: number, value_type: float, min: 0 }
+              - { label: "Duración (minutos)", name: durationMinutes, widget: number, value_type: int, min: 1 }
+              - label: "Imagen"
+                name: image
+                widget: object
+                fields:
+                  - { label: "Imagen", name: url, widget: image }
+                  - { label: "Descripción de la imagen", name: alt, widget: string }
+          - label: "Galería"
+            name: gallery
+            widget: list
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "Imagen", name: url, widget: image }
+              - { label: "Descripción de la imagen", name: alt, widget: string }
+              - { label: "Pie de foto", name: caption, widget: string, required: false }
+          - label: "Horarios"
+            name: openingHours
+            widget: list
+            allow_add: false
+            summary: "{{fields.day}}: {{fields.open}} - {{fields.close}}"
+            fields:
+              - { label: "Día (orden)", name: dayOfWeek, widget: hidden }
+              - { label: "Día", name: day, widget: string }
+              - { label: "Abre (HH:mm, vacío = cerrado)", name: open, widget: string, required: false }
+              - { label: "Cierra (HH:mm, vacío = cerrado)", name: close, widget: string, required: false }
+          - label: "Redes sociales"
+            name: socialLinks
+            widget: object
+            fields:
+              - { label: "Instagram", name: instagram, widget: string, required: false }
+              - { label: "Facebook", name: facebook, widget: string, required: false }

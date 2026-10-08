@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Librería Marginalia | Librería independiente en Barcelona</title>
+  <meta name="description" content="Librería independiente con novedades, recomendaciones del librero, clubes de lectura y eventos.">
+  <meta name="theme-color" content="#efe8d6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a class="nav__brand" href="#inicio" id="brand"></a>
+      <button class="nav__toggle" id="toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
+      <nav class="nav__menu" id="menu" aria-label="Navegación principal"><ul id="links"></ul></nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <p class="kicker" id="hero-kicker"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero__desc" id="hero-desc"></p>
+        <a class="btn" href="#novedades">Ver novedades</a>
+      </div>
+      <div class="shelf" id="shelf" aria-hidden="true"></div>
+    </section>
+
+    <section id="novedades" class="sec wrap" aria-labelledby="n-title">
+      <header class="head"><p class="kicker">Recién llegados</p><h2 id="n-title">Novedades</h2></header>
+      <ul class="books" id="books"></ul>
+    </section>
+
+    <section id="librero" class="pick" aria-labelledby="pick-title">
+      <div class="wrap pick__in">
+        <div id="pick-cover"></div>
+        <div>
+          <p class="kicker" id="pick-title"></p>
+          <blockquote class="pick__quote" id="pick-quote"></blockquote>
+          <p class="pick__by" id="pick-by"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="categorias" class="sec wrap" aria-labelledby="c-title">
+      <header class="head"><p class="kicker">Índice</p><h2 id="c-title">Categorías</h2></header>
+      <ol class="toc" id="toc"></ol>
+    </section>
+
+    <section id="eventos" class="sec wrap" aria-labelledby="e-title">
+      <header class="head"><p class="kicker">Agenda</p><h2 id="e-title">Eventos</h2></header>
+      <ul class="events" id="events"></ul>
+    </section>
+
+    <section id="contacto" class="visit" aria-labelledby="v-title">
+      <div class="wrap visit__in">
+        <div>
+          <p class="kicker light">Visítanos</p>
+          <h2 id="v-title">Pasa a hojear.</h2>
+          <ul class="info" id="info"></ul>
+          <div class="row" id="actions"></div>
+        </div>
+        <div>
+          <h3>Horario</h3>
+          <ul class="hours" id="hours"></ul>
+          <div class="map" id="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="foot wrap"><p id="copy"></p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

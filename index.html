@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webs con panel de edición, pago único | Guillermo Santana García</title>
+  <meta name="description"
+    content="Elige un modelo de web para tu negocio local. Te la entrego personalizada y con un panel para editarla tú mismo. Sin cuotas mensuales.">
+  <meta name="theme-color" content="#0c0d16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800;900&family=Hanken+Grotesk:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip" href="#modelos">Saltar a los modelos</a>
+
+  <header class="bar wrap">
+    <span class="bar__name" id="brand-name"></span>
+    <nav class="bar__nav" aria-label="Principal">
+      <a href="#modelos">Modelos</a><a href="#incluye">Qué incluye</a><a href="#como">Cómo funciona</a><a
+        href="#precio">Precio</a>
+      <a class="pill" href="#contacto">Hablemos</a>
+    </nav>
+  </header>
+
+  <section class="hero wrap" aria-labelledby="headline">
+    <div class="hero__text">
+      <h1 id="headline"></h1>
+      <p id="intro"></p>
+      <div class="row"><a class="btn btn--main" href="#modelos">Ver los modelos</a><a class="btn btn--ghost"
+          href="#precio">Ver precios</a></div>
+    </div>
+    <div class="stack" id="stack">
+      <span class="sticker s1">Pago único</span>
+      <span class="sticker s2">Sin cuotas</span>
+      <span class="sticker s3">Editable sin código</span>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__in" id="marquee"></div>
+  </div>
+
+  <main>
+    <section id="modelos" class="sec" aria-labelledby="m-title">
+      <div class="wrap">
+        <h2 id="m-title">Seis modelos. <span class="hl">Elige el tuyo.</span></h2>
+        <p class="lead">Cada uno con su propio diseño. Los que ya están hechos puedes probarlos tal cual, como los vería
+          tu cliente.</p>
+        <ul class="grid" id="templates"></ul>
+      </div>
+    </section>
+
+    <section id="incluye" class="sec" aria-labelledby="i-title">
+      <div class="wrap">
+        <h2 id="i-title">Todo lo que <span class="hl">necesita tu web</span></h2>
+        <ul class="bento" id="features"></ul>
+      </div>
+    </section>
+
+    <section id="como" class="sec" aria-labelledby="h-title">
+      <div class="wrap">
+        <h2 id="h-title">Así de <span class="hl">simple</span></h2>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </section>
+
+    <section id="precio" class="sec" aria-labelledby="p-title">
+      <div class="wrap">
+        <h2 id="p-title">Un pago. <span class="hl">Y la web es tuya.</span></h2>
+        <div class="plans" id="plans"></div>
+        <ul class="notes" id="notes"></ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="wrap" aria-labelledby="c-title">
+      <div class="cta">
+        <h2 id="c-title">Cuéntame qué negocio tienes.</h2>
+        <a class="mail" id="mail" href="#"></a>
+        <p>O escríbeme por <a id="linkedin" href="#" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn (se abre en una pestaña nueva)">LinkedIn</a>. Respondo lo más rápido posible.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <p id="copy"></p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

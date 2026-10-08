@@ -1,0 +1,31 @@
+{
+  "business": {
+    "name": "Atelier Rosalía", "tagline": "Cabello con alma.",
+    "description": "Peluquería de autor en el centro de Valencia. Corte, color y cuidado capilar a medida, en un espacio tranquilo donde el tiempo se detiene un rato.",
+    "phone": "XXXXXXXX", "email": "hola@ejemplo.com", "whatsapp": "XXXXXXXX",
+    "address": { "street": "Calle de la Paz, 18", "postalCode": "46003", "city": "Valencia", "mapEmbedUrl": "" },
+    "heroImage": { "url": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80", "alt": "Interior luminoso de una peluquería" },
+    "seo": { "title": "Atelier Rosalía | Peluquería de autor en Valencia", "description": "Peluquería en Valencia: corte, color, tratamientos y peinados. Reserva tu cita en Atelier Rosalía." }
+  },
+  "navigation": [
+    { "label": "Servicios", "sectionId": "servicios" }, { "label": "Equipo", "sectionId": "equipo" },
+    { "label": "Trabajos", "sectionId": "trabajos" }, { "label": "Contacto", "sectionId": "contacto" }
+  ],
+  "services": [
+    { "name": "Corte", "items": [ { "name": "Corte y peinado", "note": "Incluye lavado", "price": 32 }, { "name": "Corte de flequillo", "note": "Retoque", "price": 8 }, { "name": "Corte infantil", "note": "Hasta 10 años", "price": 15 } ] },
+    { "name": "Color", "items": [ { "name": "Color raíz", "note": "Retoque de raíz", "price": 45 }, { "name": "Mechas balayage", "note": "Según largo", "price": 95 }, { "name": "Tono y brillo", "note": "Gloss", "price": 38 } ] },
+    { "name": "Cuidado", "items": [ { "name": "Tratamiento hidratante", "note": "Con masaje", "price": 28 }, { "name": "Alisado orgánico", "note": "Según largo", "price": 110 }, { "name": "Peinado de evento", "note": "Con prueba", "price": 50 } ] }
+  ],
+  "team": [
+    { "name": "Rosalía Vidal", "role": "Directora y colorista", "bio": "Quince años especializada en rubios luminosos y color natural." },
+    { "name": "Clara Soler", "role": "Estilista", "bio": "Cortes de líneas limpias y peinados para cada ocasión." },
+    { "name": "Marc Ferrer", "role": "Tratamientos", "bio": "Diagnóstico capilar y rituales de cuidado a medida." }
+  ],
+  "gallery": [
+    { "url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80", "alt": "Melena con ondas suaves" },
+    { "url": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&q=80", "alt": "Peinado con color natural" },
+    { "url": "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=700&q=80", "alt": "Detalle de un corte en el salón" }
+  ],
+  "openingHours": [ { "days": "Martes a viernes", "time": "10:00 - 20:00" }, { "days": "Sábado", "time": "9:00 - 15:00" }, { "days": "Domingo y lunes", "time": "Cerrado" } ],
+  "socialLinks": { "instagram": "https://www.instagram.com/" }
+}

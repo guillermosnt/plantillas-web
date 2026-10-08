@@ -74,7 +74,7 @@
     {
       "name": "Corte clásico",
       "description": "Corte a tijera o máquina, acabado con navaja y peinado a tu estilo.",
-      "price": 17,
+      "price": 15,
       "durationMinutes": 30,
       "image": {
         "url": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80",

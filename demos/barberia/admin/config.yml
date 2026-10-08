@@ -1,12 +1,13 @@
 # Panel de edición (Decap CMS) de la plantilla Barbería.
 # Rutas relativas a la RAÍZ del repositorio (la carpeta donde se ejecuta "npx decap-server").
 
-local_backend: true        # Solo funciona en localhost; en la web publicada se usa "backend"
+local_backend: true      
 
 backend:
   name: github
-  repo: guillermosnt/plantillas-web   # <- se cambia al publicar
+  repo: guillermosnt/plantillas-web  
   branch: main
+  base_url: https://sveltia-cms-auth.guille2000sg.workers.dev
 
 locale: es
 media_folder: "demos/barberia/img"

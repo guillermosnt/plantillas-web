@@ -1,4 +1,3 @@
-// Plantilla Librería: todo el contenido sale de content.json.
 const $ = (id) => document.getElementById(id);
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
 const link = (cls, text, href, ext = false) => {

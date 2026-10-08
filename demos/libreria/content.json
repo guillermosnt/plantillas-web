@@ -6,47 +6,157 @@
     "phone": "XXXXXXXX",
     "email": "hola@ejemplo.com",
     "whatsapp": "XXXXXXXX",
-    "address": { "street": "Calle del Olivo, 12", "postalCode": "08001", "city": "Barcelona", "mapEmbedUrl": "" },
-    "seo": { "title": "Librería Marginalia | Librería independiente en Barcelona", "description": "Librería independiente con novedades, recomendaciones del librero, clubes de lectura y eventos. Visítanos en Barcelona." }
+    "address": {
+      "street": "Calle del Olivo, 12",
+      "postalCode": "08001",
+      "city": "Barcelona",
+      "mapEmbedUrl": ""
+    },
+    "seo": {
+      "title": "Librería Marginalia | Librería independiente en Barcelona",
+      "description": "Librería independiente con novedades, recomendaciones del librero, clubes de lectura y eventos. Visítanos en Barcelona."
+    }
   },
   "navigation": [
-    { "label": "Novedades", "sectionId": "novedades" },
-    { "label": "El librero", "sectionId": "librero" },
-    { "label": "Categorías", "sectionId": "categorias" },
-    { "label": "Eventos", "sectionId": "eventos" },
-    { "label": "Visítanos", "sectionId": "contacto" }
+    {
+      "label": "Novedades",
+      "sectionId": "novedades"
+    },
+    {
+      "label": "El librero",
+      "sectionId": "librero"
+    },
+    {
+      "label": "Categorías",
+      "sectionId": "categorias"
+    },
+    {
+      "label": "Eventos",
+      "sectionId": "eventos"
+    },
+    {
+      "label": "Visítanos",
+      "sectionId": "contacto"
+    }
   ],
   "newReleases": [
-    { "title": "La casa de los inviernos", "author": "Marta Ibáñez Roca", "price": 19.9, "color": "#1f4a3d", "ink": "#efe8d6" },
-    { "title": "Mapas del agua", "author": "Daniel Quiroga", "price": 18.5, "color": "#c9a24a", "ink": "#1b2a24" },
-    { "title": "Después del faro", "author": "Elena Sorribes", "price": 21, "color": "#8c2f2b", "ink": "#efe8d6" },
-    { "title": "Cartas sin dirección", "author": "Iván Lorca", "price": 17.9, "color": "#2b3a55", "ink": "#efe8d6" },
-    { "title": "El jardín de Nora", "author": "Paula Merino", "price": 20.5, "color": "#d9cfb4", "ink": "#1b2a24" },
-    { "title": "Hora de cierre", "author": "Samuel Beltrán", "price": 22, "color": "#1b2a24", "ink": "#efe8d6" }
+    {
+      "title": "La casa de los inviernos",
+      "author": "Marta Ibáñez Roca",
+      "price": 19.9,
+      "color": "#1f4a3d",
+      "ink": "#efe8d6"
+    },
+    {
+      "title": "Mapas del agua",
+      "author": "Daniel Quiroga",
+      "price": 18.5,
+      "color": "#c9a24a",
+      "ink": "#1b2a24"
+    },
+    {
+      "title": "Después del faro",
+      "author": "Elena Sorribes",
+      "price": 21,
+      "color": "#8c2f2b",
+      "ink": "#efe8d6"
+    },
+    {
+      "title": "Cartas sin dirección",
+      "author": "Iván Lorca",
+      "price": 17.9,
+      "color": "#2b3a55",
+      "ink": "#efe8d6"
+    },
+    {
+      "title": "El jardín de Nora",
+      "author": "Paula Merino",
+      "price": 20.5,
+      "color": "#d9cfb4",
+      "ink": "#1b2a24"
+    },
+    {
+      "title": "Hora de cierre",
+      "author": "Samuel Beltrán",
+      "price": 22,
+      "color": "#1b2a24",
+      "ink": "#efe8d6"
+    }
   ],
   "pick": {
     "label": "La recomendación del librero",
     "bookseller": "Lucía, librera",
     "quote": "Es de esos libros que empiezas por la tarde y terminas con la luz apagada. Una novela pequeña, exacta y muy humana.",
-    "book": { "title": "Después del faro", "author": "Elena Sorribes", "price": 21, "color": "#8c2f2b", "ink": "#efe8d6" }
+    "book": {
+      "title": "Después del faro",
+      "author": "Elena Sorribes",
+      "price": 21,
+      "color": "#8c2f2b",
+      "ink": "#efe8d6"
+    }
   },
   "categories": [
-    { "name": "Narrativa", "description": "Novela y relato, clásicos y contemporáneos." },
-    { "name": "Ensayo", "description": "Pensamiento, historia y sociedad." },
-    { "name": "Poesía", "description": "Para leer en voz alta y volver a leer." },
-    { "name": "Infantil y juvenil", "description": "Álbumes ilustrados y primeras lecturas." },
-    { "name": "Cómic y novela gráfica", "description": "Autores locales y grandes obras." },
-    { "name": "Viajes y mapas", "description": "Guías, crónicas y atlas." }
+    {
+      "name": "Narrativa",
+      "description": "Novela y relato, clásicos y contemporáneos."
+    },
+    {
+      "name": "Ensayo",
+      "description": "Pensamiento, historia y sociedad."
+    },
+    {
+      "name": "Poesía",
+      "description": "Para leer en voz alta y volver a leer."
+    },
+    {
+      "name": "Infantil y juvenil",
+      "description": "Álbumes ilustrados y primeras lecturas."
+    },
+    {
+      "name": "Cómic y novela gráfica",
+      "description": "Autores locales y grandes obras."
+    },
+    {
+      "name": "Viajes y mapas",
+      "description": "Guías, crónicas y atlas."
+    }
   ],
   "events": [
-    { "when": "Primer jueves de mes", "time": "19:30", "title": "Club de lectura", "description": "Leemos un libro al mes y lo comentamos con calma. Plazas limitadas." },
-    { "when": "Cada sábado", "time": "11:30", "title": "Cuentacuentos", "description": "Una hora de historias para niños de 4 a 8 años." },
-    { "when": "Último viernes de mes", "time": "20:00", "title": "Presentación y vino", "description": "Un autor, una conversación y una copa para brindar." }
+    {
+      "when": "Primer jueves de mes",
+      "time": "19:30",
+      "title": "Club de lectura",
+      "description": "Leemos un libro al mes y lo comentamos con calma. Plazas limitadas."
+    },
+    {
+      "when": "Cada sábado",
+      "time": "11:30",
+      "title": "Cuentacuentos",
+      "description": "Una hora de historias para niños de 4 a 8 años."
+    },
+    {
+      "when": "Último viernes de mes",
+      "time": "20:00",
+      "title": "Presentación y vino",
+      "description": "Un autor, una conversación y una copa para brindar."
+    }
   ],
   "openingHours": [
-    { "days": "Lunes a viernes", "time": "10:00 - 20:30" },
-    { "days": "Sábado", "time": "10:00 - 14:00 y 17:00 - 20:00" },
-    { "days": "Domingo", "time": "Cerrado" }
+    {
+      "days": "Lunes a viernes",
+      "time": "10:00 - 20:30"
+    },
+    {
+      "days": "Sábado",
+      "time": "10:00 - 14:00 y 17:00 - 20:00"
+    },
+    {
+      "days": "Domingo",
+      "time": "Cerrado"
+    }
   ],
-  "socialLinks": { "instagram": "https://www.instagram.com/", "facebook": "" }
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/",
+    "facebook": ""
+  }
 }

@@ -48,5 +48,5 @@ function behaviour() {
   links.forEach((a) => { const s = document.querySelector(a.hash); if (s) io.observe(s); });
 }
 
-fetch('content.json').then((r) => { if (!r.ok) throw new Error('No se pudo cargar content.json'); return r.json(); })
+fetch('content.json', { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error('No se pudo cargar content.json'); return r.json(); })
   .then((c) => { render(c); behaviour(); }).catch((e) => $('contenido').prepend(el('p', 'wrap', 'Error: ' + e.message)));

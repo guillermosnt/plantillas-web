@@ -37,18 +37,16 @@ function modelCard(t) {
   const li = el('li', 'model rv');
   const wrap = t.available ? el('a', 'model__link') : el('div', 'model__link');
   if (t.available) { wrap.href = t.url; wrap.setAttribute('aria-label', `Ver la demo de ${t.name}`); }
-  wrap.append(frame(t), el('h3', '', t.name), el('p', '', `${t.style}. ${t.description}`),
-    t.available ? el('span', 'model__go', 'Ver demo →') : el('span', 'model__soon', 'Próximamente'));
+  wrap.append(frame(t), el('h3', '', t.name), el('p', '', `${t.style}. ${t.description}`));
   li.append(wrap);
+  const actions = el('div', 'model__actions');
+  if (t.available) {
+    const demo = el('a', 'model__go', 'Ver demo →'); demo.href = t.url;
+    const tryIt = el('a', 'model__try', 'Probar el panel'); tryIt.href = `${t.url}probar/`;
+    actions.append(demo, tryIt);
+  } else actions.append(el('span', 'model__soon', 'Próximamente'));
+  li.append(actions);
   return li;
-}
-
-function planCard(p) {
-  const card = el('article', 'plan rv' + (p.featured ? ' plan--featured' : ''));
-  const list = el('ul');
-  p.features.forEach((f) => list.append(el('li', '', f)));
-  card.append(el('h3', '', p.name), el('p', 'plan__price', p.price), list);
-  return card;
 }
 
 function tile(f) {
@@ -106,17 +104,25 @@ async function init() {
 
   $('templates').append(...site.templates.map(modelCard));
   $('features').append(...site.features.map(tile));
-  $('steps').append(...site.steps.map((s) => {
+  const cms = site.cms;
+  $('steps').append(...cms.steps.map((s) => {
     const li = el('li', 'rv');
     li.append(el('h3', '', s.title), el('p', '', s.text));
     return li;
   }));
-  $('plans').append(...site.plans.map(planCard));
-  $('notes').append(...site.planNotes.map((n) => el('li', '', n)));
+  $('p-title').textContent = cms.editTitle;
+  $('panel-text').textContent = cms.editText;
+  $('edit-items').append(...cms.editItems.map((t) => el('li', '', t)));
+  $('panel-note').textContent = cms.note;
+  const first = site.templates.find((t) => t.available);
+  if (first) $('try-btn').href = `${first.url}probar/`;
+  $('tech').append(...cms.tech.map((t) => {
+    const li = el('li'); li.append(el('b', '', t.name), el('span', '', t.text)); return li;
+  }));
 
   const mail = $('mail');
   mail.textContent = site.contact.email;
-  mail.href = `mailto:${site.contact.email}?subject=${encodeURIComponent('Quiero una web para mi negocio')}`;
+  mail.href = `mailto:${site.contact.email}?subject=${encodeURIComponent('Sobre el proyecto de plantillas web')}`;
   $('linkedin').href = site.contact.linkedin;
   $('copy').textContent = `© ${new Date().getFullYear()} ${site.brand.name}`;
 

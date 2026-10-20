@@ -1,0 +1,170 @@
+# Panel de PRUEBAS (público): no guarda nada, todo vive en la memoria del navegador.
+backend:
+  name: test-repo
+locale: es
+media_folder: demos/libreria/img
+public_folder: img
+collections:
+- name: web
+  label: Mi web
+  files:
+  - name: contenido
+    label: Contenido de la web
+    file: demos/libreria/content.json
+    fields:
+    - label: Negocio
+      name: business
+      widget: object
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Eslogan
+        name: tagline
+        widget: string
+      - label: Descripción
+        name: description
+        widget: text
+      - label: Teléfono
+        name: phone
+        widget: string
+      - label: Email
+        name: email
+        widget: string
+      - label: WhatsApp
+        name: whatsapp
+        widget: string
+      - label: Dirección
+        name: address
+        widget: object
+        fields:
+        - label: Calle y número
+          name: street
+          widget: string
+        - label: Código postal
+          name: postalCode
+          widget: string
+        - label: Ciudad
+          name: city
+          widget: string
+        - label: Enlace del mapa (opcional)
+          name: mapEmbedUrl
+          widget: string
+          required: false
+      - label: Buscadores (SEO)
+        name: seo
+        widget: object
+        fields:
+        - label: Título
+          name: title
+          widget: string
+        - label: Descripción
+          name: description
+          widget: text
+    - label: Novedades
+      name: newReleases
+      widget: list
+      fields:
+      - label: Título
+        name: title
+        widget: string
+      - label: Autor
+        name: author
+        widget: string
+      - label: Precio (€)
+        name: price
+        widget: number
+        value_type: float
+        min: 0
+      - label: Color de fondo
+        name: color
+        widget: color
+      - label: Color del texto
+        name: ink
+        widget: color
+      summary: '{{fields.title}}'
+    - label: Recomendación del librero
+      name: pick
+      widget: object
+      fields:
+      - label: Texto
+        name: label
+        widget: string
+      - label: Librero
+        name: bookseller
+        widget: string
+      - label: Cita
+        name: quote
+        widget: text
+      - label: Libro
+        name: book
+        widget: object
+        fields:
+        - label: Título
+          name: title
+          widget: string
+        - label: Autor
+          name: author
+          widget: string
+        - label: Precio (€)
+          name: price
+          widget: number
+          value_type: float
+          min: 0
+        - label: Color de fondo
+          name: color
+          widget: color
+        - label: Color del texto
+          name: ink
+          widget: color
+    - label: Categorías
+      name: categories
+      widget: list
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Descripción
+        name: description
+        widget: text
+      summary: '{{fields.name}}'
+    - label: Eventos
+      name: events
+      widget: list
+      fields:
+      - label: Cuándo
+        name: when
+        widget: string
+      - label: Horario
+        name: time
+        widget: string
+      - label: Título
+        name: title
+        widget: string
+      - label: Descripción
+        name: description
+        widget: text
+      summary: '{{fields.title}}'
+    - label: Horarios
+      name: openingHours
+      widget: list
+      fields:
+      - label: Días
+        name: days
+        widget: string
+      - label: Horario
+        name: time
+        widget: string
+      summary: '{{fields.days}}'
+    - label: Redes sociales
+      name: socialLinks
+      widget: object
+      fields:
+      - label: Instagram
+        name: instagram
+        widget: string
+        required: false
+      - label: Facebook
+        name: facebook
+        widget: string
+        required: false

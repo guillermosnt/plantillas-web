@@ -1,0 +1,160 @@
+# Panel de PRUEBAS (público): no guarda nada, todo vive en la memoria del navegador.
+backend:
+  name: test-repo
+locale: es
+media_folder: demos/tienda-ropa/img
+public_folder: img
+collections:
+- name: web
+  label: Mi web
+  files:
+  - name: contenido
+    label: Contenido de la web
+    file: demos/tienda-ropa/content.json
+    fields:
+    - label: Negocio
+      name: business
+      widget: object
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Eslogan
+        name: tagline
+        widget: string
+      - label: Descripción
+        name: description
+        widget: text
+      - label: Teléfono
+        name: phone
+        widget: string
+      - label: Email
+        name: email
+        widget: string
+      - label: WhatsApp
+        name: whatsapp
+        widget: string
+      - label: Dirección
+        name: address
+        widget: object
+        fields:
+        - label: Calle y número
+          name: street
+          widget: string
+        - label: Código postal
+          name: postalCode
+          widget: string
+        - label: Ciudad
+          name: city
+          widget: string
+        - label: Enlace del mapa (opcional)
+          name: mapEmbedUrl
+          widget: string
+          required: false
+      - label: Foto principal
+        name: heroImage
+        widget: object
+        fields:
+        - label: Imagen
+          name: url
+          widget: image
+        - label: Descripción de la imagen
+          name: alt
+          widget: string
+      - label: Buscadores (SEO)
+        name: seo
+        widget: object
+        fields:
+        - label: Título
+          name: title
+          widget: string
+        - label: Descripción
+          name: description
+          widget: text
+    - label: Cinta de mensajes
+      name: ticker
+      widget: list
+      field:
+        label: Elemento
+        name: item
+        widget: string
+    - label: Colecciones
+      name: collections
+      widget: list
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Texto
+        name: text
+        widget: text
+      - label: Imagen
+        name: image
+        widget: object
+        fields:
+        - label: Imagen
+          name: url
+          widget: image
+        - label: Descripción de la imagen
+          name: alt
+          widget: string
+      summary: '{{fields.name}}'
+    - label: Destacados
+      name: featured
+      widget: list
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Precio (€)
+        name: price
+        widget: number
+        value_type: float
+        min: 0
+      - label: Color de fondo
+        name: color
+        widget: color
+      - label: Etiqueta (opcional)
+        name: tag
+        widget: string
+        required: false
+      summary: '{{fields.name}}'
+    - label: La tienda
+      name: store
+      widget: object
+      fields:
+      - label: Título
+        name: title
+        widget: string
+      - label: Texto
+        name: text
+        widget: text
+      - label: Imagen
+        name: image
+        widget: object
+        fields:
+        - label: Imagen
+          name: url
+          widget: image
+        - label: Descripción de la imagen
+          name: alt
+          widget: string
+    - label: Horarios
+      name: openingHours
+      widget: list
+      fields:
+      - label: Días
+        name: days
+        widget: string
+      - label: Horario
+        name: time
+        widget: string
+      summary: '{{fields.days}}'
+    - label: Redes sociales
+      name: socialLinks
+      widget: object
+      fields:
+      - label: Instagram
+        name: instagram
+        widget: string
+        required: false

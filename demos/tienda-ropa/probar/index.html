@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Probar el panel</title>
+  <link href="config.yml" type="text/yaml" rel="cms-config-url">
+</head>
+<body>
+  <script>window.CMS_MANUAL_INIT = true;</script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    // Modo demostración: se precarga el contenido real de la plantilla en la memoria del navegador.
+    fetch('../content.json', { cache: 'no-cache' })
+      .then((r) => r.text())
+      .then((text) => {
+        window.repoFiles = { demos: { 'tienda-ropa': { 'content.json': { content: text } } } };
+        CMS.init();
+      });
+  </script>
+</body>
+</html>

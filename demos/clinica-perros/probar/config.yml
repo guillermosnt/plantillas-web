@@ -1,0 +1,142 @@
+# Panel de PRUEBAS (público): no guarda nada, todo vive en la memoria del navegador.
+backend:
+  name: test-repo
+locale: es
+media_folder: demos/clinica-perros/img
+public_folder: img
+collections:
+- name: web
+  label: Mi web
+  files:
+  - name: contenido
+    label: Contenido de la web
+    file: demos/clinica-perros/content.json
+    fields:
+    - label: Negocio
+      name: business
+      widget: object
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Eslogan
+        name: tagline
+        widget: string
+      - label: Descripción
+        name: description
+        widget: text
+      - label: Teléfono
+        name: phone
+        widget: string
+      - label: Email
+        name: email
+        widget: string
+      - label: WhatsApp
+        name: whatsapp
+        widget: string
+      - label: Dirección
+        name: address
+        widget: object
+        fields:
+        - label: Calle y número
+          name: street
+          widget: string
+        - label: Código postal
+          name: postalCode
+          widget: string
+        - label: Ciudad
+          name: city
+          widget: string
+        - label: Enlace del mapa (opcional)
+          name: mapEmbedUrl
+          widget: string
+          required: false
+      - label: Foto principal
+        name: heroImage
+        widget: object
+        fields:
+        - label: Imagen
+          name: url
+          widget: image
+        - label: Descripción de la imagen
+          name: alt
+          widget: string
+      - label: Buscadores (SEO)
+        name: seo
+        widget: object
+        fields:
+        - label: Título
+          name: title
+          widget: string
+        - label: Descripción
+          name: description
+          widget: text
+    - label: Servicios
+      name: services
+      widget: list
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Texto
+        name: text
+        widget: text
+      - label: Color de fondo
+        name: color
+        widget: color
+      summary: '{{fields.name}}'
+    - label: Urgencias
+      name: emergency
+      widget: object
+      fields:
+      - label: Título
+        name: title
+        widget: string
+      - label: Texto
+        name: text
+        widget: text
+    - label: Equipo
+      name: team
+      widget: list
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Cargo
+        name: role
+        widget: string
+      summary: '{{fields.name}}'
+    - label: Consejos
+      name: tips
+      widget: list
+      fields:
+      - label: Título
+        name: title
+        widget: string
+      - label: Texto
+        name: text
+        widget: text
+      summary: '{{fields.title}}'
+    - label: Horarios
+      name: openingHours
+      widget: list
+      fields:
+      - label: Días
+        name: days
+        widget: string
+      - label: Horario
+        name: time
+        widget: string
+      summary: '{{fields.days}}'
+    - label: Redes sociales
+      name: socialLinks
+      widget: object
+      fields:
+      - label: Instagram
+        name: instagram
+        widget: string
+        required: false
+      - label: Facebook
+        name: facebook
+        widget: string
+        required: false

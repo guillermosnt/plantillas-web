@@ -1,68 +1,15 @@
 {
   "brand": {
     "name": "Guillermo Santana García",
-    "tagline": "Webs profesionales con panel de edición. Pago único.",
-    "intro": "Elige un modelo, cuéntame cómo es tu negocio y te entrego tu web personalizada, lista para usar y con un panel para que cambies textos, precios y fotos tú mismo, sin saber programar.",
-    "headline": "Tu negocio, con una web que puedes editar tú.",
-    "highlight": "editar tú"
+    "tagline": "Plantillas web con panel de edición",
+    "intro": "Proyecto personal: seis plantillas de páginas web para negocios locales, cada una con un diseño propio y un panel para cambiar textos, precios y fotos sin tocar código. Hechas con HTML, CSS y JavaScript, sin servidor propio.",
+    "headline": "Seis webs de negocio que se editan sin escribir código.",
+    "highlight": "sin escribir código"
   },
   "contact": {
     "email": "guille2000sg@gmail.com",
     "linkedin": "https://www.linkedin.com/in/guillermo-santana-garc%C3%ADa/"
   },
-  "steps": [
-    {
-      "title": "Eliges un modelo",
-      "text": "Mira las demos, pruébalas en el móvil y quédate con la que más encaje con tu negocio."
-    },
-    {
-      "title": "Me cuentas tu negocio",
-      "text": "Nombre, colores, textos, fotos y servicios. Si no tienes algo, te oriento."
-    },
-    {
-      "title": "La personalizo",
-      "text": "Adapto la plantilla a tu marca y cargo todo tu contenido."
-    },
-    {
-      "title": "La recibes y es tuya",
-      "text": "Te entrego la web publicada y el panel para editarla. Sin cuotas mensuales."
-    }
-  ],
-  "plans": [
-    {
-      "name": "Esencial",
-      "price": "250 €",
-      "featured": false,
-      "features": [
-        "Web con tu marca, colores, logo y secciones",
-        "Panel para editar textos, precios y fotos",
-        "Vídeo-guía del panel",
-        "Publicada en una dirección gratuita",
-        "15 días de ajustes tras la entrega"
-      ]
-    },
-    {
-      "name": "Completo",
-      "price": "350 €",
-      "featured": true,
-      "features": [
-        "Todo lo del plan Esencial",
-        "Dominio propio configurado",
-        "Textos redactados por mí y fotos retocadas",
-        "Preparada para Google (SEO local) y ayuda con tu ficha de Maps",
-        "Páginas legales (aviso legal, privacidad y cookies)",
-        "Formulario de reservas o contacto",
-        "30 días de ajustes tras la entrega"
-      ]
-    }
-  ],
-  "planNotes": [
-    "Pago único. Sin cuotas mensuales.",
-    "El dominio (unos 10 €/año) lo contratas tú directamente.",
-    "Las páginas legales son textos base orientativos; la responsabilidad legal final es del titular del negocio.",
-    "No incluye mantenimiento ni soporte después del periodo de ajustes. Cambios posteriores, desde 40 €.",
-    "Sesión de formación en directo (opcional): 40 € la hora."
-  ],
   "templates": [
     {
       "id": "barberia",
@@ -134,7 +81,7 @@
   "features": [
     {
       "title": "Panel para editar",
-      "text": "Cambia textos, precios, fotos y horarios tú mismo, sin saber programar.",
+      "text": "Cambiar textos, precios, fotos y horarios desde formularios, sin ver código.",
       "size": "big"
     },
     {
@@ -142,13 +89,62 @@
       "text": "Se adapta a móvil, tablet y ordenador."
     },
     {
-      "title": "Preparada para Google",
-      "text": "Estructura y textos pensados para que te encuentren."
+      "title": "Preparada para buscadores",
+      "text": "HTML semántico, títulos y descripciones pensados para Google."
     },
     {
-      "title": "Sin cuotas",
-      "text": "Pagas una vez. La web es tuya y no hay mensualidades.",
+      "title": "Sin servidor propio",
+      "text": "Todo funciona con GitHub y servicios gratuitos: sin base de datos y sin mantenimiento.",
       "size": "wide"
     }
-  ]
+  ],
+  "cms": {
+    "steps": [
+      {
+        "title": "El contenido vive en un archivo",
+        "text": "Cada web lee sus textos, precios, horarios e imágenes de un único archivo, content.json. El diseño no contiene datos."
+      },
+      {
+        "title": "El panel lo edita con formularios",
+        "text": "Decap CMS genera los formularios a partir de ese archivo. Cambiar un precio o subir una foto no requiere ver código."
+      },
+      {
+        "title": "Guardar es un commit",
+        "text": "Al publicar, el panel guarda el cambio en el repositorio de GitHub. No hay base de datos ni servidor propio."
+      },
+      {
+        "title": "La web se actualiza sola",
+        "text": "GitHub Pages vuelve a publicar en uno o dos minutos y la web muestra el cambio."
+      }
+    ],
+    "editTitle": "Un panel para editar sin código",
+    "editText": "Lo que ve quien lleva el negocio es un panel con formularios, no un editor de código. Puede cambiar casi todo el contenido de la web:",
+    "editItems": [
+      "Textos y eslogan",
+      "Precios y servicios",
+      "Fotos y galería",
+      "Horarios",
+      "Datos de contacto",
+      "Redes sociales"
+    ],
+    "tech": [
+      {
+        "name": "HTML, CSS y JavaScript",
+        "text": "Las seis webs, sin frameworks ni compilación."
+      },
+      {
+        "name": "Decap CMS",
+        "text": "El panel de edición, generado a partir de un archivo de configuración."
+      },
+      {
+        "name": "GitHub Pages",
+        "text": "Publica las webs y guarda el contenido en el repositorio."
+      },
+      {
+        "name": "Cloudflare Workers",
+        "text": "Servicio gratuito que permite iniciar sesión con GitHub."
+      }
+    ],
+    "note": "El panel de pruebas es una demostración: no necesita registro y no guarda nada. Al recargar la página, todo vuelve al principio."
+  }
 }
